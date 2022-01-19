@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>criptografia</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <main>
+    <div class="container">
+
+    <div class="inputs">
+      <input type="text" id="criptografar" placeholder="Digite aqui para criptografar">
+      <input type="text" id="descriptografar" placeholder="Digite aqui para descriptografar">
+      </div>
+
+      <div class="buttons">
+      <button onclick="cripto()">Criptografar</button>
+      <button onclick="descripto()">Descriptografar</button>
+      </div>
+      <button id="copy">Copiar</button>
+    </div>
+
+  </main>
+
+
+  <script src="./script.js"></script>
+
+<footer>
+  <p>Feito por Thiago vinícius <a href="https://github.com/ubyss"> <img width="20px" src="./GitHub-Mark-32px.png">/ubyss</a></p>
+</footer>
+
+
+
+
+  <script>
+    let copyBtn = document.querySelector("#copy")
+    var resultado = document.querySelector("#descriptografar")
+
+    copyBtn.addEventListener("click", () => {
+      resultado.select()
+      document.execCommand("copy")
+    })
+  </script>
+  
+</body>
+</html>
